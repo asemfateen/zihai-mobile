@@ -1,0 +1,61 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Environment and secrets
+.env
+.env*.local
+*.keystore
+!mobile/android/app/debug.keystore
+*.jks
+*.p8
+*.p12
+*.key
+*.pem
+*KEYSTORE_INFO*
+*keystore_info*
+
+# Release binaries (large files > 100MB rejected by GitHub)
+release_output/*.apk
+release_output/*.aab
+*/release_output/*.apk
+*/release_output/*.aab
+
+# Android build artifacts
+.gradle/
+*/.gradle/
+build/
+*/build/
+.cxx/
+*/.cxx/
+local.properties
+*/local.properties
+*.iml
+*.hprof
+.idea/
+
+# Expo & Metro
+.expo/
+*/.expo/
+dist/
+*/dist/
+web-build/
+*/web-build/
+expo-env.d.ts
+*/expo-env.d.ts
+.kotlin/
+*/.kotlin/
+.metro-health-check*
+
+# Backend temporary files
+backend/tts_cache/
+backend/zihai.db-shm
+backend/zihai.db-wal
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# OS files
+.DS_Store
+Thumbs.db
